@@ -13,13 +13,6 @@ public class TodoItemLayout extends HorizontalLayout {
         text = new TextField();
         text.addStyleName(ValoTheme.BUTTON_BORDERLESS);//make borderless
 
-        if (todo.getText().isEmpty())
-        {
-            Label label = new Label("No task to Todo ");
-            label.addStyleName(ValoTheme.LABEL_H1);
-            addComponentsAndExpand(label);
-        }
-
         addComponents(done);
         addComponentsAndExpand(text);
 
